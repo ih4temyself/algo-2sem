@@ -16,7 +16,6 @@ class DoublyLinkedList:
         if self.head_node is None:
             self.head_node = new_node
             self.tail_node = new_node        
-
         else:
             new_node.next = self.head_node
             self.head_node.prev = new_node
@@ -27,7 +26,6 @@ class DoublyLinkedList:
 
         if self.tail_node is None:
             self.head_node = self.tail_node = new_node
-
         else:
             self.tail_node.next = new_node
             new_node.prev = self.tail_node
