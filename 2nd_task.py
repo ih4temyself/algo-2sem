@@ -15,13 +15,10 @@ def counter_dx(string):
             operator = operators.pop()
 
             digits.push(eval(f"{digit1} {operator} {digit2}"))
-
         else:
             operators.push(char)
-            
+
     return digits.pop()
-          
-
-
+                   
 string = "(1+((2+3)*(4*5)))"
 print(counter_dx(string)) 
