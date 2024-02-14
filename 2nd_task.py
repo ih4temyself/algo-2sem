@@ -1,11 +1,12 @@
+from lecture3.custom_stack import Stack
 
 def counter_dx(string):
-    digits = []
-    operators = []
+    digits = Stack()
+    operators = Stack()
     
     for char in string: 
         if char.isdigit(): 
-            digits.append(int(char))
+            digits.push(int(char))
         elif char == "(":
             pass
         elif char == ")":
@@ -13,12 +14,12 @@ def counter_dx(string):
             digit2 = digits.pop()
             operator = operators.pop()
 
-            digits.append(eval(f"{digit1} {operator} {digit2}"))
+            digits.push(eval(f"{digit1} {operator} {digit2}"))
 
         else:
-            operators.append(char)
+            operators.push(char)
             
-    return digits[0]
+    return digits.pop()
           
 
 
