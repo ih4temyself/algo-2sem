@@ -1,19 +1,19 @@
 import random 
 from random_lists_gen import large_list_gen, medium_list_gen, small_list_gen
 
-#sort 1
-def dict_generator(lst): 
-    return {element: random.random() for element in lst}
+#shuffle 1
+def dict_generator(initial_list): 
+    return {element: random.random() for element in initial_list}
 
 def sort_by_value(dictionary):
     return sorted(dictionary.keys(), key = lambda x: dictionary[x])
 
-# sort 2 
-def knuth_shuffle(lst):
-    for i in range(len(lst) - 1):
-        k = random.randint(0, len(lst) - 1)
-        lst[i], lst[k] = lst[k], lst[i]
-    return lst
+#shuffle 2 
+def knuth_shuffle(ininitial_list):
+    for i in range(len(ininitial_list) - 1):
+        k = random.randint(0, len(ininitial_list) - 1)
+        ininitial_list[i], ininitial_list[k] = ininitial_list[k], ininitial_list[i]
+    return ininitial_list
 
 if __name__ == "__main__":
     small_list = small_list_gen()
