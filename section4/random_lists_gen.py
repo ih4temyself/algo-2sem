@@ -18,5 +18,4 @@ def reversed_ordered_list(size):
     return [i for i in range(size, 0, -1)]
 
 def almost_identical_list(size, identical_probability=0.9):
-    output_list = [random.randint(0, 2) if random.random() < identical_probability else random.randint(0, 1000) for _ in range(size)]
-    return output_list
+    return[random.randint(0, 2) if random.random() < identical_probability else random.randint(0, 1000) for _ in range(size)]

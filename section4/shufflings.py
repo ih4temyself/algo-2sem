@@ -2,11 +2,10 @@ import random
 from random_lists_gen import custom_size_list_gen
 
 # shuffle 1
-def dict_generator(initial_list): 
-    return {element: random.random() for element in initial_list}
-
-def sort_by_value(dictionary):
-    return sorted(dictionary.keys(), key = lambda x: dictionary[x])
+def shuffle_with_dict(initial_list):
+    random_numbers = {index: random.random() for index in range(len(initial_list))}
+    shuffled_indices = sorted(random_numbers.keys(), key=lambda x: random_numbers[x])
+    return [initial_list[i] for i in shuffled_indices]
 
 # shuffle 2 
 def knuth_shuffle(ininitial_list):
@@ -23,14 +22,11 @@ if __name__ == "__main__":
     small_list = custom_size_list_gen(100)
     medium_list = custom_size_list_gen(1000)
     large_list = custom_size_list_gen(10000)
+    print(small_list)
+    print(shuffle_with_dict(small_list))
+    # print(shuffle_with_dict(medium_list))
+    # print(shuffle_with_dict(large_list))
 
-    small_dict = {}
-    print(sort_by_value(dict_generator(small_list)))
-    medium_dict= {}
-    print(sort_by_value(dict_generator(medium_list)))
-    large_dict= {}
-    print(sort_by_value(dict_generator(large_list)))
-
-    print(knuth_shuffle(small_list))
-    print(knuth_shuffle(medium_list))
-    print(knuth_shuffle(large_list))
+    # print(knuth_shuffle(small_list))
+    # print(knuth_shuffle(medium_list))
+    # print(knuth_shuffle(large_list))
