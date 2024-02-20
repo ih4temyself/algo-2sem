@@ -1,7 +1,5 @@
 import time
-import random_lists_gen
-import shufflings
-import add_logs
+import random_lists_gen, shufflings, add_logs
 from sortings import InsertionSort, SelectionSort, ShellSort
 
 class Experiment:
