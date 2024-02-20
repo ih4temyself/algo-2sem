@@ -1,4 +1,4 @@
-import time, random_lists_gen, shufflings
+import time, random_lists_gen, shufflings, add_logs
 from sortings import InsertionSort, SelectionSort, ShellSort
 
 def sort_time_counter(sorting_function, input_list, size):
@@ -10,12 +10,11 @@ def sort_time_counter(sorting_function, input_list, size):
 
 def experimenting(sorting_function, custom_list_dict):
     results = {}
-
     for list_gen_func, size_tests_dict in custom_list_dict.items():
         results[list_gen_func.__name__] = {}
         for size, tests in size_tests_dict.items():
             results[list_gen_func.__name__][size] = []
-            for i in range(tests):
+            for _ in range(tests):
                 time_taken = sort_time_counter(sorting_function, list_gen_func(size), size)
                 results[list_gen_func.__name__][size].append(time_taken)
 
@@ -31,6 +30,7 @@ if __name__ == "__main__":
         random_lists_gen.almost_identical_list: {1000: 5}
     }
 
-    print(f"{experimenting(InsertionSort.insertion_sort, custom_lists)}\n")
-    print(f"{experimenting(SelectionSort.selection_sort, custom_lists)}\n")
-    print(f"{experimenting(ShellSort.shell_sort, custom_lists)}\n")
+    add_logs.add_data_to_log(experimenting(InsertionSort.insertion_sort, custom_lists), 'insertion_sort')
+    add_logs.add_data_to_log(experimenting(SelectionSort.selection_sort, custom_lists), 'selection_sort')
+    add_logs.add_data_to_log(experimenting(ShellSort.shell_sort, custom_lists), 'shell_sort')
+   

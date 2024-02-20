@@ -1,0 +1,86 @@
+·:*¨༺ ♱✮♱ ༻¨*:·
+  ╱|、
+(˚ˎ 。7  
+ |、˜〵  
+じしˍ,)ノ:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+ordered_list - size: 1000, average Time: 4.99725341796875e-05
+experiments:
+experiment 1: 4.887580871582031e-05
+experiment 2: 4.792213439941406e-05
+experiment 3: 4.9114227294921875e-05
+experiment 4: 5.1021575927734375e-05
+experiment 5: 5.2928924560546875e-05
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+custom_size_list_gen - size: 100, average Time: 8.563995361328125e-05
+experiments:
+experiment 1: 8.416175842285156e-05
+experiment 2: 9.274482727050781e-05
+experiment 3: 8.511543273925781e-05
+experiment 4: 8.606910705566406e-05
+experiment 5: 8.0108642578125e-05
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+almost_ordered_list - size: 1000, average Time: 0.002341175079345703
+experiments:
+experiment 1: 0.002691030502319336
+experiment 2: 0.0019838809967041016
+experiment 3: 0.0021581649780273438
+experiment 4: 0.0023529529571533203
+experiment 5: 0.002519845962524414
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+almost_identical_list - size: 1000, average Time: 0.007317686080932617
+experiments:
+experiment 1: 0.0074880123138427734
+experiment 2: 0.006797075271606445
+experiment 3: 0.007388114929199219
+experiment 4: 0.007625102996826172
+experiment 5: 0.0072901248931884766
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+shuffled_list - size: 1000, average Time: 0.009946489334106445
+experiments:
+experiment 1: 0.009903669357299805
+experiment 2: 0.009811878204345703
+experiment 3: 0.010010004043579102
+experiment 4: 0.009706974029541016
+experiment 5: 0.010299921035766602
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+custom_size_list_gen - size: 1000, average Time: 0.010265207290649414
+experiments:
+experiment 1: 0.010091066360473633
+experiment 2: 0.01049184799194336
+experiment 3: 0.010215997695922852
+experiment 4: 0.010169029235839844
+experiment 5: 0.010358095169067383
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+reversed_ordered_list - size: 1000, average Time: 0.01849365234375
+experiments:
+experiment 1: 0.01846599578857422
+experiment 2: 0.018463134765625
+experiment 3: 0.01850128173828125
+experiment 4: 0.018597841262817383
+experiment 5: 0.01844000816345215
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+custom_size_list_gen - size: 10000, average Time: 1.078915548324585
+experiments:
+experiment 1: 1.0773169994354248
+experiment 2: 1.0960979461669922
+experiment 3: 1.0853049755096436
+experiment 4: 1.0591747760772705
+experiment 5: 1.0766830444335938
+·:*¨༺ ♱✮♱ ༻¨*:·
+
