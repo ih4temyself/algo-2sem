@@ -1,4 +1,4 @@
-def insertion_sort(array):
+def insertion_sort(array, size):
     for step in range(1, len(array)):
         key = array[step]
         j = step - 1

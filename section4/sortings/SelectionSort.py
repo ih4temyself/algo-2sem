@@ -1,4 +1,4 @@
-def selection_sort(array):
+def selection_sort(array, size):
     for i in range(len(array)):
         min_indx = i
         for j in range(i + 1, len(array)):
