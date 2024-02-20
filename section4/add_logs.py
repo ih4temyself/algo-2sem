@@ -2,10 +2,10 @@ import os, re
 
 def add_data_to_log(data_dict, sort_label):
     next_number = 1
-    while os.path.exists(f"section4/logs/log-{sort_label}-{next_number}.txt"):
+    while os.path.exists(f"D:\\Denis\\unik\\section3\\section4\\logs\\log-{sort_label}-{next_number}.txt"):
         next_number += 1
         
-    with open(f"section4/logs/log-{sort_label}-{next_number}.txt", "w") as file :
+    with open(f"D:\\Denis\\unik\\section3\\section4\\logs\\log-{sort_label}-{next_number}.txt", "w") as file :
         file.write(f"·:*¨༺ ♱✮♱ ༻¨*:·\n") 
         file.write(f"  ╱|、\n(˚ˎ 。7  \n |、˜〵  \nじしˍ,)ノ:·\n\n") 
 
