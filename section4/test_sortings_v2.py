@@ -1,6 +1,6 @@
 import time
 import random_lists_gen, shufflings, add_logs
-from sortings import InsertionSort, SelectionSort, ShellSort
+from sortings import InsertionSort, SelectionSort, ShellSort, BubbleSort
 
 class Experiment:
     def __init__(self, list_generator, sizes, iterations):
@@ -28,13 +28,15 @@ if __name__ == "__main__":
         Experiment(random_lists_gen.ordered_list, [1000], 5),
         Experiment(random_lists_gen.almost_ordered_list, [1000], 5),
         Experiment(random_lists_gen.reversed_ordered_list, [1000], 5),
-        Experiment(random_lists_gen.almost_identical_list, [1000], 5)
+        Experiment(random_lists_gen.almost_identical_list, [1000], 5,),
+        Experiment(random_lists_gen.custom_size_string_list_gen, [1000,1000], 5)
     ]
 
     sorting_algorithms = {
         'InsertionSort': InsertionSort.insertion_sort,
         'SelectionSort': SelectionSort.selection_sort,
-        'ShellSort': ShellSort.shell_sort
+        'ShellSort': ShellSort.shell_sort,
+        'BubbleSort': BubbleSort.bubble_sort
     }
 
     for algorithm_name, sorting_function in sorting_algorithms.items():

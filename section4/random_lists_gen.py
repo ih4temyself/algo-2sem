@@ -1,4 +1,4 @@
-import random
+import random, string
 
 def custom_size_list_gen(size): 
     return [random.randint(1, size) for _ in range(size)]
@@ -19,3 +19,6 @@ def reversed_ordered_list(size):
 
 def almost_identical_list(size, identical_probability=0.9):
     return[random.randint(0, 2) if random.random() < identical_probability else random.randint(0, 1000) for _ in range(size)]
+
+def custom_size_string_list_gen(size):
+    return [''.join(random.choices(string.ascii_letters, k=random.randint(1, size))) for _ in range(size)]
