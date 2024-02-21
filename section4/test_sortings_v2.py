@@ -41,5 +41,4 @@ if __name__ == "__main__":
         results = {}
         for experiment in experiments:
             results[experiment.list_generator.__name__] = experiment.run(sorting_function)
-        # add_logs.add_data_to_log(results, algorithm_name)
-        print(results)
+        add_logs.add_data_to_log(results, algorithm_name)
