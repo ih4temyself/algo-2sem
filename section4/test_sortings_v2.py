@@ -3,12 +3,12 @@ import random_lists_gen, shufflings, add_logs
 from sortings import InsertionSort, SelectionSort, ShellSort, BubbleSort
 
 class Experiment:
-    def __init__(self, list_generator, sizes, iterations):
+    def __init__(self, list_generator, sizes, iterations) -> None:
         self.list_generator = list_generator
         self.sizes = sizes
         self.iterations = iterations
 
-    def run(self, sorting_function):
+    def run(self, sorting_function) -> dict:
         results = {}
         for size in self.sizes:
             results[size] = []
