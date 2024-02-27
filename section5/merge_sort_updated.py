@@ -1,4 +1,4 @@
-from section4.test_sortings_v2 import experimenting
+from section4 import test_sortings_v2
 
 def insertion_sort(arr, lo, hi):
     for i in range(lo + 1, hi + 1):
