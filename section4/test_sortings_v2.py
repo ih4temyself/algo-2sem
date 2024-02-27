@@ -21,7 +21,7 @@ class Experiment:
                 results[size].append(time_taken)
         return results
 
-if __name__ == "__main__":
+def experimenting(sorting_algorithms):
     experiments = [
         Experiment(random_lists_gen.custom_size_list_gen, [100, 1000, 10000], 5),
         Experiment(shufflings.shuffled_list, [1000], 5),
@@ -32,15 +32,17 @@ if __name__ == "__main__":
         Experiment(random_lists_gen.custom_size_string_list_gen, [1000,1000], 5)
     ]
 
+    for algorithm_name, sorting_function in sorting_algorithms.items():
+        results = {}
+        for experiment in experiments:
+            results[experiment.list_generator.__name__] = experiment.run(sorting_function)
+        add_logs.add_data_to_log(results, algorithm_name)
+
+if __name__ == "__main__":
     sorting_algorithms = {
         'InsertionSort': InsertionSort.insertion_sort,
         'SelectionSort': SelectionSort.selection_sort,
         'ShellSort': ShellSort.shell_sort,
         'BubbleSort': BubbleSort.bubble_sort
     }
-
-    for algorithm_name, sorting_function in sorting_algorithms.items():
-        results = {}
-        for experiment in experiments:
-            results[experiment.list_generator.__name__] = experiment.run(sorting_function)
-        add_logs.add_data_to_log(results, algorithm_name)
+    experimenting(sorting_algorithms)
