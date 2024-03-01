@@ -1,5 +1,3 @@
-from section4 import test_sortings_v2
-
 def insertion_sort(arr, lo, hi):
     for i in range(lo + 1, hi + 1):
         key = arr[i]
@@ -76,15 +74,14 @@ def merge_sort(arr, lo, hi):
 
 
 if __name__ == '__main__':
-    # data = [12, 11, 13, 5, 6, 7]
-    # print('Given array is')
-    # print(data)
+    data = [12, 11, 13, 5, 6, 7]
+    print('Given array is')
+    print(data)
 
-    # print('\n\n')
+    print('\n\n')
 
-    # n = len(data)
-    # merge_sort(data, 0, n - 1)
-    # print('Sorted array is')
-    # print(data)
-    sorting_algorithm = {'merge_sort': merge_sort}
-    experimenting(sorting_algorithm)   
+    n = len(data)
+    merge_sort(data, 0, n - 1)
+    print('Sorted array is')
+    print(data)
+

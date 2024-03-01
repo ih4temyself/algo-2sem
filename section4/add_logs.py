@@ -1,5 +1,4 @@
 import os, re
-from section5.inversions import input_arr1
 def add_data_to_log(data_dict, sort_label):
     next_number = 1
     while os.path.exists(f"section4/logs/log-{sort_label}-{next_number}.txt"):

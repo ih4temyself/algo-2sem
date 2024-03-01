@@ -1,0 +1,96 @@
+·:*¨༺ ♱✮♱ ༻¨*:·
+  ╱|、
+(˚ˎ 。7  
+ |、˜〵  
+じしˍ,)ノ:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+ordered_list - size: 1000, average Time: 4.9591064453125e-05
+experiments:
+experiment 1: 4.9114227294921875e-05
+experiment 2: 4.9114227294921875e-05
+experiment 3: 5.2928924560546875e-05
+experiment 4: 4.9114227294921875e-05
+experiment 5: 4.76837158203125e-05
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+custom_size_list_gen - size: 100, average Time: 9.0789794921875e-05
+experiments:
+experiment 1: 8.797645568847656e-05
+experiment 2: 0.00010204315185546875
+experiment 3: 9.083747863769531e-05
+experiment 4: 8.58306884765625e-05
+experiment 5: 8.726119995117188e-05
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+almost_ordered_list - size: 1000, average Time: 0.002483987808227539
+experiments:
+experiment 1: 0.0025310516357421875
+experiment 2: 0.002434968948364258
+experiment 3: 0.0024080276489257812
+experiment 4: 0.0024127960205078125
+experiment 5: 0.0026330947875976562
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+almost_identical_list - size: 1000, average Time: 0.007122659683227539
+experiments:
+experiment 1: 0.0069959163665771484
+experiment 2: 0.007239341735839844
+experiment 3: 0.006973981857299805
+experiment 4: 0.0072650909423828125
+experiment 5: 0.007138967514038086
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+custom_size_list_gen - size: 1000, average Time: 0.00951681137084961
+experiments:
+experiment 1: 0.00952601432800293
+experiment 2: 0.009463071823120117
+experiment 3: 0.009782791137695312
+experiment 4: 0.009348154067993164
+experiment 5: 0.009464025497436523
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+shuffled_list - size: 1000, average Time: 0.009720182418823243
+experiments:
+experiment 1: 0.009938240051269531
+experiment 2: 0.009659767150878906
+experiment 3: 0.010009050369262695
+experiment 4: 0.009514808654785156
+experiment 5: 0.009479045867919922
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+custom_size_string_list_gen - size: 1000, average Time: 0.011438083648681641
+experiments:
+experiment 1: 0.011375188827514648
+experiment 2: 0.011543035507202148
+experiment 3: 0.01168513298034668
+experiment 4: 0.011111021041870117
+experiment 5: 0.01147603988647461
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+reversed_ordered_list - size: 1000, average Time: 0.01843085289001465
+experiments:
+experiment 1: 0.01848006248474121
+experiment 2: 0.01833486557006836
+experiment 3: 0.018505096435546875
+experiment 4: 0.01833820343017578
+experiment 5: 0.018496036529541016
+·:*¨༺ ♱✮♱ ༻¨*:·
+
+૮₍ ˃ ⤙ ˂ ₎ა¨*:·
+custom_size_list_gen - size: 10000, average Time: 1.039771270751953
+experiments:
+experiment 1: 1.0289092063903809
+experiment 2: 1.0131893157958984
+experiment 3: 1.079087734222412
+experiment 4: 1.007457971572876
+experiment 5: 1.0702121257781982
+·:*¨༺ ♱✮♱ ༻¨*:·
+

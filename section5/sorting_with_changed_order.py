@@ -12,7 +12,7 @@ def sorting_cstm_order(a1, a2):
     for num in sorted(counts.keys()):
         result.extend([num] * counts[num])
     
-    return result
+    return result 
 
 if __name__ == "__main__":
      a1 = [2, 1, 2, 5, 7, 1, 9, 3, 6, 8, 8] 

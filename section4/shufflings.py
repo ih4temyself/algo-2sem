@@ -1,5 +1,5 @@
 import random 
-from random_lists_gen import custom_size_list_gen
+from section4.random_lists_gen import custom_size_list_gen
 
 # shuffle 1
 def shuffle_with_dict(initial_list) -> list:
