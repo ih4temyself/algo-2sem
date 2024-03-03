@@ -17,8 +17,7 @@ def first_n_smallest(arr, n):
 
     mins_list = sorted(min_order_dict.items())
     return [tup[1] for tup in mins_list]
- 
 
 if __name__ == "__main__":
-    test_list = [1,2,3,4,1]
+    test_list = [1, 2, 3, 4, 1]
     print(first_n_smallest(test_list, 3))
