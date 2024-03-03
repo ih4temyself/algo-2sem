@@ -15,7 +15,5 @@ def stack_test():
     print(my_stack)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     stack_test()
-
-

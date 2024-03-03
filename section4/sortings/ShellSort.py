@@ -14,9 +14,9 @@ def shell_sort(array, n):
         interval //= 2
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     data = [9, 8, 3, 7, 5, 6, 4, 1]
     size = len(data)
     shell_sort(data, size)
-    print('Sorted Array in Ascending Order:')
+    print("Sorted Array in Ascending Order:")
     print(data)

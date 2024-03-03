@@ -18,7 +18,5 @@ def queue_test():
         print(i)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     queue_test()
-
-

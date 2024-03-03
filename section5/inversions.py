@@ -11,5 +11,5 @@ if __name__ == "__main__":
     input_arr1 = [8, 4, 2, 1]
     input_arr2 = [1, 20, 6, 4, 5]
 
-    print(find_inversions(input_arr1)) 
+    print(find_inversions(input_arr1))
     print(find_inversions(input_arr2))

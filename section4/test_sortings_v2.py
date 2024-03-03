@@ -2,6 +2,7 @@ import time
 import random_lists_gen, shufflings, add_logs
 from sortings import InsertionSort, SelectionSort, ShellSort, BubbleSort
 
+
 class Experiment:
     def __init__(self, list_generator, sizes, iterations) -> None:
         self.list_generator = list_generator
@@ -21,6 +22,7 @@ class Experiment:
                 results[size].append(time_taken)
         return results
 
+
 def experimenting(sorting_algorithms):
     experiments = [
         Experiment(random_lists_gen.custom_size_list_gen, [100, 1000, 10000], 5),
@@ -28,21 +30,28 @@ def experimenting(sorting_algorithms):
         Experiment(random_lists_gen.ordered_list, [1000], 5),
         Experiment(random_lists_gen.almost_ordered_list, [1000], 5),
         Experiment(random_lists_gen.reversed_ordered_list, [1000], 5),
-        Experiment(random_lists_gen.almost_identical_list, [1000], 5,),
-        Experiment(random_lists_gen.custom_size_string_list_gen, [1000,1000], 5)
+        Experiment(
+            random_lists_gen.almost_identical_list,
+            [1000],
+            5,
+        ),
+        Experiment(random_lists_gen.custom_size_string_list_gen, [1000, 1000], 5),
     ]
 
     for algorithm_name, sorting_function in sorting_algorithms.items():
         results = {}
         for experiment in experiments:
-            results[experiment.list_generator.__name__] = experiment.run(sorting_function)
+            results[experiment.list_generator.__name__] = experiment.run(
+                sorting_function
+            )
         add_logs.add_data_to_log(results, algorithm_name)
+
 
 if __name__ == "__main__":
     sorting_algorithms = {
-        'InsertionSort': InsertionSort.insertion_sort,
-        'SelectionSort': SelectionSort.selection_sort,
-        'ShellSort': ShellSort.shell_sort,
-        'BubbleSort': BubbleSort.bubble_sort
+        "InsertionSort": InsertionSort.insertion_sort,
+        "SelectionSort": SelectionSort.selection_sort,
+        "ShellSort": ShellSort.shell_sort,
+        "BubbleSort": BubbleSort.bubble_sort,
     }
     experimenting(sorting_algorithms)

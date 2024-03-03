@@ -8,8 +8,8 @@ def selection_sort(array, size):
     return array
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     data = [5, 6, 4, 2]
     selection_sort(data)
-    print('Sorted Array in Ascending Order:')
+    print("Sorted Array in Ascending Order:")
     print(data)

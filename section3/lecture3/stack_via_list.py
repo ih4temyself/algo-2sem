@@ -1,4 +1,3 @@
-
 def stack_test():
     my_stack = []
     my_stack.append(5)
@@ -16,5 +15,5 @@ def stack_test():
         print(i)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     stack_test()

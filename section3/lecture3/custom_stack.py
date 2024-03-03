@@ -41,7 +41,7 @@ class Stack:
         return self._list.pop()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Stack()
     s.push(3)
     s.push(8)

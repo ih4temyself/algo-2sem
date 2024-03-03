@@ -15,7 +15,7 @@ class DoublyLinkedList:
 
         if self.head_node is None:
             self.head_node = new_node
-            self.tail_node = new_node        
+            self.tail_node = new_node
         else:
             new_node.next = self.head_node
             self.head_node.prev = new_node
@@ -31,11 +31,10 @@ class DoublyLinkedList:
             new_node.prev = self.tail_node
             self.tail_node = new_node
 
-        
     def remove_head(self):
         if self.head_node is None:
             return
-        
+
         if self.head_node == self.tail_node:
             self.head_node = self.tail_node = None
         else:
@@ -47,7 +46,7 @@ class DoublyLinkedList:
     def remove_tail(self):
         if self.tail_node is None:
             return
-        
+
         if self.head_node == self.tail_node:
             self.head_node = self.tail_node = None
         else:
@@ -56,9 +55,8 @@ class DoublyLinkedList:
             if prev_node:
                 prev_node.next = None
 
-
     def size(self) -> int:
-        counter = 0 
+        counter = 0
         marker = self.head_node
         while marker:
             counter += 1
@@ -73,13 +71,13 @@ class DoublyLinkedList:
         print()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     doubly_linked_list = DoublyLinkedList()
 
-    doubly_linked_list.insert_to_end('a')
-    doubly_linked_list.insert_to_end('b')
-    doubly_linked_list.insert_to_start('c')
-    doubly_linked_list.insert_to_end('d')
+    doubly_linked_list.insert_to_end("a")
+    doubly_linked_list.insert_to_end("b")
+    doubly_linked_list.insert_to_start("c")
+    doubly_linked_list.insert_to_end("d")
 
     print("Node Data")
     doubly_linked_list.show()

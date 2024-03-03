@@ -57,7 +57,7 @@ class Stack:
         return self._list.pop()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     s = Stack()
     s.push(3)
     s.push(8)
@@ -72,7 +72,7 @@ if __name__ == '__main__':
     s.pop()
 
     print(s)
-    
+
     si = iter(s)
     print(next(si))
     print(next(si))

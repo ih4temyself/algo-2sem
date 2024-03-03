@@ -10,8 +10,8 @@ def insertion_sort(array, size):
         array[j + 1] = key
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     data = [9, 5, 1, 4, 3]
     insertion_sort(data)
-    print('Sorted Array in Ascending Order:')
+    print("Sorted Array in Ascending Order:")
     print(data)

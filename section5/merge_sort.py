@@ -13,8 +13,8 @@ def merge(arr, lo, mid, hi):
     """
 
     # create temp arrays and copy data to them
-    left = arr[lo:(mid + 1)]
-    right = arr[(mid + 1):(hi + 1)]
+    left = arr[lo : (mid + 1)]
+    right = arr[(mid + 1) : (hi + 1)]
 
     left_count = len(left)
     right_count = len(right)
@@ -51,7 +51,7 @@ def merge_sort(arr, lo, hi):
     :param arr: array we need to sort
     :param lo: (low) the left index
     :param hi: (high) the right index
-    :return: 
+    :return:
     """
     if lo < hi:
         # Same as (l_ind + r_ind) // 2, but avoids overflow for large l_ind and r_ind
@@ -63,15 +63,14 @@ def merge_sort(arr, lo, hi):
         merge(arr, lo, mid, hi)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     data = [12, 11, 13, 5, 6, 7]
-    print('Given array is')
+    print("Given array is")
     print(data)
 
-    print('\n\n')
+    print("\n\n")
 
     n = len(data)
     merge_sort(data, 0, n - 1)
-    print('Sorted array is')
+    print("Sorted array is")
     print(data)
-
