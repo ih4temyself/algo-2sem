@@ -1,3 +1,11 @@
+"""
+03.03.24
+дьяконенко денис 
+  ╱|、
+(˚ˎ 。7  
+ |、˜〵          
+じしˍ,)ノ
+"""
 def sort_csv_columns(csv_string):
     lines = csv_string.strip().split('\n')
     columns = lines[0].split(';')
