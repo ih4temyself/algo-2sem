@@ -19,6 +19,7 @@ def sort_csv_columns(csv_string):
     for line in lines[1:]:
         values = line.split(";")
         sorted_values = [values[columns.index(col)] for col in sorted_columns]
+        print(sorted_values)
         sorted_csv.append(";".join(sorted_values))
 
     return "\n".join(sorted_csv)
@@ -27,4 +28,4 @@ def sort_csv_columns(csv_string):
 if __name__ == "__main__":
     csv_input = "myjinxin2015;raulbc777;smile67;Dentzil;SteffenVogel_79\n17945;10091;10088;3907;10132\n2;12;13;48;11"
     sorted_csv_output = sort_csv_columns(csv_input)
-    print(sorted_csv_output)
+    # print(sorted_csv_output)
