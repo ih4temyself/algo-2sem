@@ -15,6 +15,9 @@ class HeapSort:
             self._capacity -= 1
             self._sink(1)
 
+    def __str__(self):
+        return str(self._elements)
+
     def sorted(self):
         return self._elements[1:]
 
@@ -38,6 +41,6 @@ class HeapSort:
 if __name__ == "__main__":
     arr = [1, 12, 9, 5, 6, 10]
     heapSort = HeapSort(arr)
+    print(heapSort)
     result = heapSort.sorted()
-    print("Sorted array is")
     print(result)
