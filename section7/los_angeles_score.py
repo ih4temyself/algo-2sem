@@ -17,14 +17,16 @@
 [bug] .*' /  .*' ; .*`- +'  `*' 
       `*-*   `*-*  `*-*'
 """
+
 import re
 
+
 def get_los_angeles_points(results):
-    wins = 0
-    for team, scores in results:
-        if re.match(r'^Los Angeles [A-Z][a-z]+$', team):
-            wins += int(scores.split(':')[0])
-    return wins
+    return sum(
+        int(scores.split(":")[0])
+        for team, scores in results
+        if re.match(r"^Los Angeles [A-Z][a-z]+$", team)
+    )
 
 
 if __name__ == "__main__":
