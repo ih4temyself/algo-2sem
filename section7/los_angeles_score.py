@@ -17,20 +17,14 @@
 [bug] .*' /  .*' ; .*`- +'  `*' 
       `*-*   `*-*  `*-*'
 """
+import re
 
-
-def get_los_angeles_points(input_lists):
-    counter = 0
-    for lst in input_lists:
-        team_name = lst[0]
-        if (
-            team_name.startswith("Los Angeles ")
-            and len(team_name[13:].split()) == 1
-            and team_name[12:].isalpha()
-            and team_name[12:].istitle()
-        ):
-            counter += int(lst[1].split(":")[0])
-    return counter
+def get_los_angeles_points(results):
+    wins = 0
+    for team, scores in results:
+        if re.match(r'^Los Angeles [A-Z][a-z]+$', team):
+            wins += int(scores.split(':')[0])
+    return wins
 
 
 if __name__ == "__main__":
