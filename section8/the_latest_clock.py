@@ -1,4 +1,27 @@
-def generate_permutations(digits):
+"""
+17.03.24
+@author: дьяконенко денис
+       _                        
+       \`*-.                    
+        )  _`-.                 
+       .  : `. .                
+       : _   '  \               
+       ; *` _.   `*-._          
+       `-.-'          `-.       
+         ;       `       `.     
+         :.       .        \    
+         . \  .   :   .-'   .   
+         '  `+.;  ;  '      :   
+         :  '  |    ;       ;-. 
+         ; '   : :`-:     _.`* ;
+[bug] .*' /  .*' ; .*`- +'  `*' 
+      `*-*   `*-*  `*-*'
+"""
+
+from time import time
+
+
+def generate_permutations(digits) -> list:
     if len(digits) == 1:
         return [digits]
 
@@ -8,7 +31,6 @@ def generate_permutations(digits):
         remaining = digits[:i] + digits[i + 1 :]
         for p in generate_permutations(remaining):
             perms.append(current + p)
-    print(perms)
     return perms
 
 
@@ -29,5 +51,7 @@ def latest_clock(*digits) -> str:
 
 
 if __name__ == "__main__":
-    # print(generate_permutations([1, 9, 8, 3]))
+    start_time = time()
     print(latest_clock(1, 9, 8, 3))
+    end_time = time()
+    print(end_time - start_time)
