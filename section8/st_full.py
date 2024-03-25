@@ -1,6 +1,3 @@
-from collections import deque
-
-
 class STFull:
     def __init__(self):
         self.linked_list = []

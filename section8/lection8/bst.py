@@ -172,10 +172,10 @@ if __name__ == "__main__":
     bst.put(15, "Vita")
     bst.put(20, "Petro")
     bst.put(-10, "Mykola")
-    print(f'Size: {bst.size()}')
+    print(f"Size: {bst.size()}")
     print(bst.get(5))
     print(bst.get(15))
-    print('elements: ')
+    print("elements: ")
     for e in bst:
         print(e)
     print(bst.min())
@@ -184,6 +184,6 @@ if __name__ == "__main__":
     print(bst.size())
     print(bst.rank(3))
     bst.delete(-1)
-    print('elements: ')
+    print("elements: ")
     for e in bst:
         print(e)
