@@ -25,7 +25,7 @@ class LinkedList:
         self.next = next
 
 
-def list_to_array(node, array=None):
+def list_to_array(node, array=None) -> list:
     if not array:
         array = []
     array.append(node.value)
@@ -35,5 +35,5 @@ def list_to_array(node, array=None):
 
 
 if __name__ == "__main__":
-    u = LinkedList(1, LinkedList(2, LinkedList(3)))
-    print(list_to_array(u))
+    hlp = LinkedList(1, LinkedList(2, LinkedList(3)))  # test from codewars
+    print(list_to_array(hlp))

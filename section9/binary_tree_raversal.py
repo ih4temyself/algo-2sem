@@ -1,3 +1,24 @@
+"""
+17.03.24
+@author: дьяконенко денис
+       _                        
+       \`*-.                    
+        )  _`-.                 
+       .  : `. .                
+       : _   '  \               
+       ; *` _.   `*-._          
+       `-.-'          `-.       
+         ;       `       `.     
+         :.       .        \    
+         . \  .   :   .-'   .   
+         '  `+.;  ;  '      :   
+         :  '  |    ;       ;-. 
+         ; '   : :`-:     _.`* ;
+[bug] .*' /  .*' ; .*`- +'  `*' 
+      `*-*   `*-*  `*-*'
+"""
+
+
 class Node:
     def __init__(self, data, left=None, right=None):
         self.data = data
@@ -26,5 +47,5 @@ def post_order(node):
 
 
 if __name__ == "__main__":
-    a = Node("a", Node("b"), Node("c", Node("d")))
+    a = Node("a", Node("b"), Node("c", Node("d")))  # test from codewars
     print(pre_order(a))
