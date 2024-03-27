@@ -1,21 +1,10 @@
 """
 22.03.24
 @author: дьяконенко денис
-       _                        
-       \`*-.                    
-        )  _`-.                 
-       .  : `. .                
-       : _   '  \               
-       ; *` _.   `*-._          
-       `-.-'          `-.       
-         ;       `       `.     
-         :.       .        \    
-         . \  .   :   .-'   .   
-         '  `+.;  ;  '      :   
-         :  '  |    ;       ;-. 
-         ; '   : :`-:     _.`* ;
-[bug] .*' /  .*' ; .*`- +'  `*' 
-      `*-*   `*-*  `*-*'
+ mmmmm   mmm    mmm  m     m
+ # # #  #"  #  #" "# "m m m"
+ # # #  # ""   #   #  #m#m#
+ # # #  "#mm"  "#m#"   # #
 """
 
 
@@ -33,12 +22,12 @@ def _in_order(node):
 
 
 def is_bst(node) -> bool:
-    in_order_tree = _in_order(node)
-    if in_order_tree == sorted(in_order_tree) or in_order_tree == sorted(
-        in_order_tree, reverse=True
-    ):
-        return True
-    return False
+    mytree = _in_order(node)
+    return (
+        True
+        if mytree == sorted(mytree) or mytree == sorted(mytree, reverse=True)
+        else False
+    )
 
 
 if __name__ == "__main__":

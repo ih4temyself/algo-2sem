@@ -19,7 +19,7 @@
 """
 
 
-class Node:
+class T:
     def __init__(self, data, left=None, right=None):
         self.data = data
         self.left = left
@@ -47,5 +47,5 @@ def post_order(node):
 
 
 if __name__ == "__main__":
-    a = Node("a", Node("b"), Node("c", Node("d")))  # test from codewars
-    print(pre_order(a))
+    a = T(5, T(2, T(1), T(3)), T(7, None, T(9)))  # test from codewars
+    print(in_order(a))
