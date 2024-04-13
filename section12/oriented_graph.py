@@ -1,3 +1,16 @@
+"""
+10.03.24
+@author: дьяконенко денис
+
+   "           ""#                                       ""#
+ mmm             #     mmm   m   m   mmm           mmm     #     mmmm   mmm
+   #             #    #" "#  "m m"  #"  #         "   #    #    #" "#  #" "#
+   #             #    #   #   #m#   # " "         m" "#    #    #   #  #   #
+ mm#mm           "mm  "#m#"    #    "#mm"         "mm"#    "mm  "#m"#  "#m#"
+                                                                 m  #
+"""
+
+
 def read_matrix():
     n = int(input())
     matrix = []
@@ -19,5 +32,9 @@ def undirected_checker(n, matrix):
 
 
 if __name__ == "__main__":
-    n, matrix = read_matrix()
+    # для тестів на еолімпі - проходить всі
+    # n, matrix = read_matrix()
+    # print(undirected_checker(n, matrix))
+    n = 3
+    matrix = [[0, 1, 1], [1, 0, 1], [1, 1, 0]]
     print(undirected_checker(n, matrix))
