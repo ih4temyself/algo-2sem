@@ -7,10 +7,10 @@ class Person:
         return self.age == other.age and self.name == other.name
 
     def __hash__(self):
-        print('The hash is:')
+        print("The hash is:")
         return hash((self.age, self.name))
 
 
-if __name__ == '__main__':
-    person = Person(42, 'Andrii')
+if __name__ == "__main__":
+    person = Person(42, "Andrii")
     print(hash(person))
